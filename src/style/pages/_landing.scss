@@ -1,0 +1,122 @@
+// Conteneur principal
+.landing {
+  border-left: 10px solid $color3;
+  border-right: 10px solid $color3;
+
+  &:before,
+  &:after {
+    content: "";
+    position: fixed;
+    background: $color4;
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  #container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 410px;
+
+    // Contenu flottant à gauche
+    img,
+    .text {
+      float: left;
+    }
+
+    // Image
+    img {
+      width: 250px;
+      height: 400px;
+      transform: scale(1.2);
+    }
+
+    // Texte
+    .text {
+      margin-left: 60px;
+      margin-top: 30px;
+      max-width: 490px;
+
+      // Titre
+      h1 {
+        font-size: 2.5em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      // Paragraphe
+      p {
+        color: $color0;
+        font-size: 18px;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+
+        // Lien dans le paragraphe
+        a {
+          color: $color1;
+          font-weight: 600;
+          text-decoration: none;
+          padding-bottom: 1px;
+
+          &:hover {
+            color: $color2;
+          }
+
+          &:visited {
+            color: $color1;
+
+          }
+        }
+      }
+
+      #more {
+        font-size: 30px;
+        text-align: right;
+        margin: 70px 0;
+      }
+    }
+
+    // Responsive
+    @media (max-width: 750px) {
+      width: auto;
+
+      img {
+        display: none;
+      }
+
+      .text {
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      position: relative;
+
+      .text {
+        padding: 20px;
+
+        p {
+          font-size: 20px;
+          margin: 1.5em 0;
+        }
+      }
+    }
+  }
+}

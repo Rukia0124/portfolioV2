@@ -1,0 +1,19 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .btn-xp {
+    display: flex;
+
+    .btn {
+      margin: 40px 20px;
+      cursor: pointer;
+    }
+
+    .active-btn {
+      color: $color1;
+    }
+  }
+}

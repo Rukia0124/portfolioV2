@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Error404 from "./pages/Error404";
-import About from "./pages/About";
+
 import Fiche from "./pages/Fiche";
 import Landing from "./pages/Landing";
 
@@ -11,7 +11,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/fiche/:id" element={<Fiche />} />
         <Route path="*" element={<Error404 />} />
       </Routes>

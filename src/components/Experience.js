@@ -19,18 +19,24 @@ const Experience = () => {
   return (
     <div id="experience">
       <h2>Expériences</h2>
+      <p>Mon parcours</p>
       <div className="btn-xp">
         <div
           className={`btn btn-studies ${studies ? "active-btn" : ""}`}
           onClick={toggleStudies}
         >
-          <i className="fa-solid fa-graduation-cap"> Formation</i>
+          <span>
+            <i className="fa-solid fa-graduation-cap"> </i>Formation
+          </span>
         </div>
         <div
           className={`btn btn-career ${career ? "active-btn" : ""}`}
           onClick={toggleCareer}
         >
-          <i className="fa-solid fa-suitcase"> Emploi</i>
+          <span>
+            <i className="fa-solid fa-suitcase"></i>
+            Emploi
+          </span>
         </div>
       </div>
       {studies && !career ? (

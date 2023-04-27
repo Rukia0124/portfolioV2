@@ -4,8 +4,19 @@
   justify-content: center;
   align-items: center;
 
+  h2 {
+    color: $color1;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
   .btn-xp {
     display: flex;
+    font-size: 20px;
+
+    i {
+      margin: 10px;
+    }
 
     .btn {
       margin: 40px 20px;

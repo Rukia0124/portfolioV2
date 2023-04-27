@@ -1,3 +1,4 @@
+import { BulbOutlined, HomeOutlined } from "@ant-design/icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -6,8 +7,8 @@ const Navigation = () => {
     <div>
       <ul className="nav">
         <li>
-          <NavLink exact to="/" className="active theme-light">
-            Accueil
+          <NavLink to="/" className="active theme-light">
+            <HomeOutlined />
           </NavLink>
         </li>
         <li>
@@ -21,11 +22,6 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/services" className="active theme-light">
-            Services
-          </NavLink>
-        </li>
-        <li>
           <NavLink to="/portfolio" className="active theme-light">
             Portfolio
           </NavLink>
@@ -35,7 +31,9 @@ const Navigation = () => {
             Contact
           </NavLink>
         </li>
-        <li>Darkmode</li>
+        <li>
+          <BulbOutlined />
+        </li>
       </ul>
     </div>
   );

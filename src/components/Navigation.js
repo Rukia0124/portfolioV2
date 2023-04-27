@@ -5,31 +5,31 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <div>
-      <ul className="nav">
+      <ul className="nav" id="nav">
         <li>
           <NavLink to="/" className="active theme-light">
             <HomeOutlined />
           </NavLink>
         </li>
         <li>
-          <NavLink to="/a-propos" className="active theme-light">
+          <a href="#about" className="active theme-light">
             A propos
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink to="/competences" className="active theme-light">
+          <a href="#competences" className="active theme-light">
             Compétences
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink to="/portfolio" className="active theme-light">
+          <a href="#portfolio" className="active theme-light">
             Portfolio
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink to="/contact" className="active theme-light">
+          <a href="#contact" className="active theme-light">
             Contact
-          </NavLink>
+          </a>
         </li>
         <li>
           <BulbOutlined />

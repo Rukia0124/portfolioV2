@@ -1,0 +1,110 @@
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .form_container {
+    form {
+      display: grid;
+      width: 100%;
+      min-width: 300px;
+      max-width: 600 px;
+      margin: 0 auto;
+
+    }
+
+    label {
+      color: $color1;
+      margin-top: 10px;
+      margin: 0 auto;
+    }
+
+    input,
+    textarea {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 25px;
+      border: solid 1px $color0;
+      height: 100px;
+
+
+      &:focus {
+        border-color: $color1;
+        outline: none;
+      }
+    }
+
+    textarea {
+      border-radius: 5px;
+      padding: 10px;
+      resize: none;
+      width: 600px;
+    }
+
+    textarea::-webkit-scrollbar {
+      width: 10px;
+      /* largeur de la barre de défilement */
+      border-radius: 5px;
+    }
+
+    textarea::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      /* couleur de fond de la barre de défilement */
+      border-radius: 5px;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+      background: $color1;
+      /* couleur de la barre de défilement */
+      border-radius: 5px;
+      /* rayon des coins de la barre de défilement */
+    }
+
+    textarea::-webkit-scrollbar-thumb:hover {
+      background: $color6;
+      /* couleur de la barre de défilement au survol */
+    }
+
+
+    input {
+      height: 50px;
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      background-color: $color1;
+      color: #fff;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      height: 30px;
+    }
+
+    .success,
+    .error {
+      width: 400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .error {
+      background: red;
+    }
+  }
+}

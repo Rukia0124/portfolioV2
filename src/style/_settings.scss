@@ -42,6 +42,7 @@ body {
   h2 {
     font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 20px;
     color: $color1;
     text-align: center;
   }
@@ -54,4 +55,26 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* largeur de la barre de défilement */
+}
+
+body::-webkit-scrollbar-track {
+  background: $color2;
+  /* couleur de fond de la barre de défilement */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $color1;
+  /* couleur de la barre de défilement */
+  border-radius: 5px;
+  /* rayon des coins de la barre de défilement */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: $color6;
+  /* couleur de la barre de défilement au survol */
 }

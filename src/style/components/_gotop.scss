@@ -1,0 +1,10 @@
+#gotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: $color1 !important;
+
+  &:visited {
+    color: $color1 !important;
+  }
+}

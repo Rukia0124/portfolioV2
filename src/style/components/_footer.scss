@@ -1,0 +1,16 @@
+#footer {
+  background-color: $color6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+
+  .socials {
+    flex-direction: row;
+
+    a {
+      margin: 5px 10px;
+    }
+  }
+}

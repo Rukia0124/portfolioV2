@@ -3,10 +3,10 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <Socials />
       <h2>Audrey, développeuse web junior</h2>
-      <p>© Rukia - 2023. All right reserved</p>
+      <p>©Rukia - 2023. All right reserved</p>
     </div>
   );
 };

@@ -1,39 +1,30 @@
-import { BulbOutlined, HomeOutlined } from "@ant-design/icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = ({ navItems }) => {
   return (
     <div>
       <ul className="nav" id="nav">
-        <li>
-          <NavLink to="/" className="active theme-light">
-            <HomeOutlined />
-          </NavLink>
-        </li>
-        <li>
-          <a href="#about" className="active theme-light">
-            A propos
-          </a>
-        </li>
-        <li>
-          <a href="#competences" className="active theme-light">
-            Compétences
-          </a>
-        </li>
-        <li>
-          <a href="#portfolio" className="active theme-light">
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="active theme-light">
-            Contact
-          </a>
-        </li>
-        <li>
-          <BulbOutlined />
-        </li>
+        <h3>Audrey</h3>
+        {navItems.map((navItem, index) => (
+          <li key={index}>
+            {navItem.to ? (
+              <NavLink
+                to={navItem.to}
+                activeClassName="active"
+                className="theme-light"
+              >
+                {navItem.icon}
+                {navItem.label}
+              </NavLink>
+            ) : (
+              <a href={navItem.href} className="theme-light">
+                {navItem.icon}
+                {navItem.label}
+              </a>
+            )}
+          </li>
+        ))}
       </ul>
     </div>
   );

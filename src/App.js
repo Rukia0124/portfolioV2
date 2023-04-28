@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Error404 from "./pages/Error404";
 import Landing from "./pages/Landing";
-import Nina from "./pages/projets/Nina";
+import Projet from "./pages/Projet";
 
 function App() {
   return (
@@ -11,11 +11,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<Error404 />} />
-        <Route path="/Nina" element={<Nina />} />
-        <Route path="*" element={<Error404 />} />
-        <Route path="*" element={<Error404 />} />
-        <Route path="*" element={<Error404 />} />
-        <Route path="*" element={<Error404 />} />
+        <Route path="/projets/:id" element={<Projet />} />
       </Routes>
     </BrowserRouter>
   );

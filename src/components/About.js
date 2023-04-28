@@ -22,7 +22,9 @@ const About = () => {
           </p>
 
           <Button type="primary" ghost="true">
-            Télécharger CV <DownloadOutlined />
+            <a href="/SamplePDFFile_5mb.pdf" download>
+              Télécharger CV <DownloadOutlined />
+            </a>
           </Button>
         </div>
       </div>

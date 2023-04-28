@@ -47,6 +47,10 @@
       color: $color1;
       border-color: $color1;
 
+      &:hover {
+        color: $color2;
+        border-color: $color2;
+      }
     }
   }
 

@@ -39,9 +39,9 @@
     }
 
     .learn-more-button {
-      background-color: $color1;
-      color: #fff;
-      border: none;
+      background-color: $color5;
+      color: $color1;
+      border: 1px solid $color1;
       padding: 8px 16px;
       border-radius: 4px;
       cursor: pointer;
@@ -49,15 +49,26 @@
       margin: 0 auto;
 
       &:hover {
-        background-color: darken($color2, 10%);
+        color: $color2;
+        border-color: $color2;
       }
 
       &:visited {
-        color: #fff;
+        color: $color1;
+
+        &:hover {
+          color: $color2;
+          border-color: $color2;
+        }
       }
 
       a {
-        color: #fff;
+        color: $color1;
+
+        &:hover {
+          color: $color2;
+          border-color: $color2;
+        }
       }
     }
   }

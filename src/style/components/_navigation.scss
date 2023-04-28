@@ -7,6 +7,15 @@
   padding: 40px;
   background-color: $color6;
 
+  h3 {
+    text-align: left;
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color1;
+  }
+
   li {
     margin-left: 20px;
     font-size: 18px;
@@ -14,15 +23,42 @@
     text-transform: uppercase;
     color: $color1;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 5px;
+      color: $color1;
+    }
 
     &:hover {
       color: $color2;
 
+      svg {
+        color: $color2;
+      }
     }
 
-
-    .active {
+    &.active,
+    &.active>* {
       color: var(--text-color);
+      font-weight: bold;
+
+      svg {
+        color: var(--text-color);
+      }
+    }
+
+    &:visited {
+      color: $color1;
+
+      svg {
+        color: $color1;
+      }
+    }
+
+    a {
+      color: inherit;
     }
   }
 

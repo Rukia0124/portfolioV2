@@ -1,0 +1,46 @@
+[{
+    "id": "projet1",
+    "title": "Booki",
+    "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Booki.png?raw=true",
+    "description": "Création de la page d'accueil d'une agence de voyage",
+    "tags": ["HTML", "CSS"],
+    "link": "",
+    "infos": "Ce site est le tout premier projet OpenClassrooms. Le but ici est de reproduire une maquette Figma avec HTML et CSS. Il s'agit d'une page statique, étant résponsive en proposant une version tablette et mobile."
+  },
+  {
+    "id": "projet2",
+    "title": "Sophie Bluel",
+    "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Sophie.png?raw=true",
+    "description": "Création d'une page web dynamique en Javascript",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "link": "",
+    "infos": "Ce projet est le second site que j'ai eu a réaliser avec OpenClassrooms. Il s'agit du site vitrine d'une photographe. Le but était de mettre en place la connexion, la gestion des données via l'api, et le filtrage des photos de la galerie."
+  },
+  {
+    "id": "projet3",
+    "title": "Nina Carducci",
+    "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/NinaCarducci.png?raw=true",
+    "description": "Deguggage et optimisation d'un site de photographe",
+    "tags": ["Javascript", "SEO", "Accessibilité"],
+    "link": "",
+    "infos": "J'ai corrigé et optimissé le code de ce site, afin d'obtenir de meilleurs performances. J'ai également mis en place le SEO et me suis assurée que l'accessibilité sois optimale."
+  },
+  {
+    "id": "projet4",
+    "title": "Kasa",
+    "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Kasa.png?raw=true",
+    "description": "Création d'une application de location immobilière en React",
+    "tags": ["React"],
+    "link": "",
+    "infos": ""
+  },
+  {
+    "id": "projet5",
+    "title": "Mon vieux Grimoire",
+    "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Grimoire.png?raw=true",
+    "description": "Developpement du backend d'un site de notation de livres",
+    "tags": ["NodeJs", "Express", "MongoDB"],
+    "link": "",
+    "infos": ""
+  }
+]

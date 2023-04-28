@@ -79,15 +79,20 @@
     }
 
     input[type="submit"] {
-      background-color: $color1;
-      color: #fff;
-      border: none;
+      background-color: $color5;
+      color: $color1;
+      border: 1px solid $color1;
       padding: 6px 16px;
       border-radius: 4px;
       cursor: pointer;
       display: block;
       margin: 0 auto;
       height: 30px;
+
+      &:hover {
+        color: $color2;
+        border-color: $color2;
+      }
     }
 
     .success,

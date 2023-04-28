@@ -9,11 +9,38 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import GoTop from "../components/GoTop";
+import { BulbOutlined, HomeOutlined } from "@ant-design/icons";
+
+const navItems = [
+  {
+    to: "/",
+    icon: <HomeOutlined />,
+  },
+  {
+    href: "#about",
+    label: "À propos",
+  },
+  {
+    href: "#competences",
+    label: "Compétences",
+  },
+  {
+    href: "#portfolio",
+    label: "Portfolio",
+  },
+  {
+    href: "#contact",
+    label: "Contact",
+  },
+  {
+    icon: <BulbOutlined />,
+  },
+];
 
 const Home = () => {
   return (
     <div>
-      <Navigation />
+      <Navigation navItems={navItems} />
       <Introduction />
       <Next link="#about" />
       <About />

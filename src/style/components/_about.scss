@@ -12,7 +12,6 @@
   h2 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: $color1;
     text-align: center;
   }
 
@@ -83,6 +82,23 @@
       .about-text {
         align-items: center;
         margin: 0 50px;
+      }
+    }
+  }
+}
+
+#dark {
+  .about-content {
+    .about-text {
+
+      button {
+        color: $color2;
+        border-color: $color2;
+
+        &:hover {
+          color: $color1;
+          border-color: $color1;
+        }
       }
     }
   }

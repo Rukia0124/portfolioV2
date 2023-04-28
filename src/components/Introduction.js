@@ -16,7 +16,7 @@ const Introduction = () => {
           continu et l'amélioration constante de mes compétences.{" "}
         </p>
         <Button type="primary" ghost="true">
-          Contactez-moi
+          <a href="#contact">Contactez-moi</a>
         </Button>
       </div>
       <img src={Avatar} alt="Avatar de Audrey" width={200} />

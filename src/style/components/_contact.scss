@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
+  margin: 40px;
 
   p {
     font-size: 15px;
@@ -111,6 +112,57 @@
 
     .error {
       color: $color1;
+    }
+  }
+}
+
+#dark {
+  #contact {
+    .form_container {
+      label {
+        color: $color2;
+        margin-top: 10px;
+        margin: 0 auto;
+      }
+
+      input,
+      textarea {
+        border: solid 1px $color5;
+        background-color: $color6;
+
+        &:focus {
+          border-color: $color2;
+        }
+      }
+
+      textarea::-webkit-scrollbar-track {
+        background: $color7;
+
+      }
+
+      textarea::-webkit-scrollbar-thumb {
+        background: $color2;
+
+      }
+
+      textarea::-webkit-scrollbar-thumb:hover {
+        background: $color6;
+
+      }
+
+
+      input[type="submit"] {
+        background-color: $color7;
+        color: $color2;
+        border: 1px solid $color2;
+
+        &:hover {
+          color: $color1;
+          border-color: $color1;
+        }
+      }
+
+
     }
   }
 }

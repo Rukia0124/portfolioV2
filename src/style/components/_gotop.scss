@@ -8,3 +8,14 @@
     color: $color1 !important;
   }
 }
+
+#dark {
+  #gotop {
+
+    color: $color2 !important;
+
+    &:visited {
+      color: $color2 !important;
+    }
+  }
+}

@@ -9,7 +9,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import GoTop from "../components/GoTop";
-import { BulbOutlined, HomeOutlined } from "@ant-design/icons";
+import { HomeOutlined } from "@ant-design/icons";
 
 const navItems = [
   {
@@ -25,15 +25,16 @@ const navItems = [
     label: "Compétences",
   },
   {
+    href: "#experience",
+    label: "Expériences",
+  },
+  {
     href: "#portfolio",
     label: "Portfolio",
   },
   {
     href: "#contact",
     label: "Contact",
-  },
-  {
-    icon: <BulbOutlined />,
   },
 ];
 

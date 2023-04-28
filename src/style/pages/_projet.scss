@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: center;
 
+    .desc {
+      margin: 20px;
+    }
+
     .projet-image {
       display: flex;
       justify-content: center;
@@ -51,6 +55,53 @@
       color: $color1;
       border: 1px solid $color1;
       box-shadow: none;
+
+      &:hover {
+        color: $color2;
+        border-color: $color2;
+      }
+    }
+  }
+}
+
+#dark {
+  #projet {
+
+    .projet-desc {
+      color: $color5;
+
+      .projet-image {
+
+        img {
+          border: solid 1px $color2;
+        }
+      }
+
+      .tags {
+        .tag {
+          background-color: $color2;
+          color: $color6;
+          border: $color6 solid 1px;
+        }
+      }
+
+      div {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .ant-btn {
+        margin: 30px;
+        background-color: $color7;
+        color: $color2;
+        border: 1px solid $color2;
+        box-shadow: none;
+
+        &:hover {
+          color: $color1;
+          border-color: $color1;
+        }
+      }
     }
   }
 }

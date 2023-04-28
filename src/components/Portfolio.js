@@ -8,12 +8,12 @@ const CarouselWrapper = styled(Carousel)`
   > .slick-dots li button {
     width: 20px;
     height: 6px;
-    background: pink;
+    background: #efb9e3;
   }
   > .slick-dots li.slick-active button {
     width: 20px;
     height: 7px;
-    background: pink;
+    background: #aeecc4;
   }
 `;
 
@@ -25,9 +25,9 @@ const Portfolio: React.FC = () => {
         <h2>Portfolio</h2>
         <p>Mes projets</p>
       </div>
-      <CarouselWrapper autoplay>
-        {data.map((data) => (
-          <div className="carousel-slide">
+      <CarouselWrapper autoplay effect="fade" autoplaySpeed={5000}>
+        {data.map((data, index) => (
+          <div className="carousel-slide" key={index}>
             <div className="slide-image">
               <img src={data.imageUrl} alt="Screenshot de l'app Booki" />
             </div>

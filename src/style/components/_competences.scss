@@ -8,7 +8,6 @@
   h2 {
     font-size: 34px;
     margin-bottom: 10px;
-    color: $color1;
   }
 
   p {
@@ -35,8 +34,41 @@
         }
 
         .ant-collapse-content-box {
-          width: 500px;
-          text-align: center;
+          background-color: $color5;
+          color: $color6;
+        }
+      }
+    }
+  }
+}
+
+#dark {
+  #competences {
+
+
+    .competences-content {
+
+      .ant-collapse {
+        border: 1px solid $color2;
+
+
+        .ant-collapse-item {
+
+          .ant-collapse-header {
+            border-color: $color2;
+            color: $color2;
+
+          }
+
+          .ant-collapse-content-box {
+            width: 500px;
+            text-align: center;
+          }
+
+          .ant-collapse-content-box {
+            background-color: $color6;
+            color: $color5;
+          }
         }
       }
     }

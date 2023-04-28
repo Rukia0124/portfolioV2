@@ -1,8 +1,10 @@
 .next {
   color: $color1;
   padding: 200px;
+}
 
-  &:visited {
-    color: $color1;
+#dark {
+  .next {
+    color: $color2;
   }
 }

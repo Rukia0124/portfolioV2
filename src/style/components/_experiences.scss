@@ -5,7 +5,6 @@
   align-items: center;
 
   h2 {
-    color: $color1;
     font-size: 34px;
     margin-bottom: 10px;
   }
@@ -25,6 +24,24 @@
 
     .active-btn {
       color: $color1;
+    }
+  }
+}
+
+#dark {
+  #experience {
+    h3 {
+      color: $color5;
+    }
+
+    p {
+      color: $color6;
+    }
+
+    .btn-xp {
+      .active-btn {
+        color: $color2;
+      }
     }
   }
 }

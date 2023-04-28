@@ -6,6 +6,7 @@ $color3: #f5dcfd;
 $color4: #e2fbeb;
 $color5:#fffdfd;
 $color6: #767676;
+$color7:#2c2d2c;
 $landing-couleur3: #F3CCD9;
 $landing-couleur4: #F4E4D9;
 $landing-couleur5: #A1D9AF;
@@ -39,11 +40,12 @@ body {
     font-family: $font-family;
   }
 
+
+
   h2 {
     font-size: 30px;
     margin-bottom: 10px;
     margin-top: 20px;
-    color: $color1;
     text-align: center;
   }
 }
@@ -77,4 +79,27 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: $color6;
   /* couleur de la barre de défilement au survol */
+}
+
+
+#light {
+  background-color: $color5;
+
+  h1,
+  h2 {
+    color: $color1;
+  }
+}
+
+#dark {
+  background-color: $color7;
+
+  h1,
+  h2 {
+    color: $color2;
+  }
+
+  p {
+    color: $color5;
+  }
 }

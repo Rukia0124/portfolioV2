@@ -35,7 +35,7 @@ const Projet = () => {
               />
             ))}
           </div>
-          <div>{projet.description}</div>
+          <div className="desc">{projet.description}</div>
           <div className="tags">
             {projet.tags.map((tag, index) => (
               <div key={index} className="tag">

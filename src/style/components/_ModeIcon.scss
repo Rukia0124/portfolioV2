@@ -1,0 +1,29 @@
+#light {
+
+  .mode {
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color: $color1 !important;
+
+    &:visited {
+      color: $color1 !important;
+    }
+  }
+}
+
+#dark {
+
+  .mode {
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color: $color2 !important;
+
+    &:visited {
+      color: $color2 !important;
+    }
+  }
+}

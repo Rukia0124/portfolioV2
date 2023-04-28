@@ -9,16 +9,12 @@ const Navigation = ({ navItems }) => {
         {navItems.map((navItem, index) => (
           <li key={index}>
             {navItem.to ? (
-              <NavLink
-                to={navItem.to}
-                activeClassName="active"
-                className="theme-light"
-              >
+              <NavLink to={navItem.to} className="active">
                 {navItem.icon}
                 {navItem.label}
               </NavLink>
             ) : (
-              <a href={navItem.href} className="theme-light">
+              <a href={navItem.href} className="active">
                 {navItem.icon}
                 {navItem.label}
               </a>

@@ -1,5 +1,6 @@
 // Conteneur principal
 .error404 {
+
   border-left: 10px solid $color3;
   border-right: 10px solid $color3;
 
@@ -86,6 +87,12 @@
       .link {
         margin: 70px 0;
         text-align: end;
+      }
+    }
+
+    #dark {
+      body {
+        background-color: $color6;
       }
     }
 

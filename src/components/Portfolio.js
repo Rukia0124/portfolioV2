@@ -35,7 +35,9 @@ const Portfolio: React.FC = () => {
               <h3>{data.title}</h3>
               <p>{data.description}</p>
               <button className="learn-more-button">
-                <NavLink to={"/projets/" + data.id}>En savoir plus</NavLink>
+                <NavLink to={"/projets/" + data.id} target="_blank">
+                  En savoir plus
+                </NavLink>
               </button>
             </div>
           </div>

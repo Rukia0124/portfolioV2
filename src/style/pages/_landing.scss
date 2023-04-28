@@ -60,7 +60,7 @@
 
       // Paragraphe
       p {
-        color: $color0;
+        color: $color5;
         font-size: 18px;
         line-height: 1.5em;
         letter-spacing: 1px;
@@ -82,6 +82,8 @@
           }
         }
       }
+
+
 
       #more {
         font-size: 30px;
@@ -116,6 +118,16 @@
           font-size: 20px;
           margin: 1.5em 0;
         }
+      }
+    }
+  }
+}
+
+#dark {
+  #container {
+    .text {
+      a {
+        color: $color2;
       }
     }
   }

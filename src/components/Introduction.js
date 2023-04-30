@@ -10,7 +10,7 @@ const Introduction = () => {
       <div className="intro-content">
         <h1>Hello world ! </h1>
         <h2>Audrey</h2>
-        <h3>développeuse web junior</h3>
+        <h3>Développeuse web junior</h3>
         <p>
           En formation avec OpenClassrooms, passionnée par l'apprentissage
           continu et l'amélioration constante de mes compétences.{" "}

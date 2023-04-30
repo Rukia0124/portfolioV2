@@ -1,9 +1,10 @@
 import { CalendarOutlined } from "@ant-design/icons";
 import { Timeline } from "antd";
-
-import React, { useState } from "react";
+import { ThemeContext } from "../App";
+import React, { useContext, useState } from "react";
 
 const Experience = () => {
+  const { theme } = useContext(ThemeContext);
   const [career, setCareer] = useState(false);
   const [studies, setStudies] = useState(true);
 
@@ -15,6 +16,7 @@ const Experience = () => {
     setCareer(true);
     setStudies(false);
   };
+  const color = theme === "light" ? "pink" : "#AEECC4";
 
   return (
     <div id="experience">
@@ -44,7 +46,7 @@ const Experience = () => {
           mode="alternate"
           items={[
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Développeuse Web</h3>
@@ -56,7 +58,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Apprentissage en autodidacte</h3>
@@ -68,7 +70,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Licence Economie Gestion</h3>
@@ -80,7 +82,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Bac STG - Gestion des ressources humaines</h3>
@@ -92,7 +94,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Diplôme national du Brevet</h3>
@@ -110,7 +112,7 @@ const Experience = () => {
           mode="alternate"
           items={[
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Téléconseillère clientèle</h3>
@@ -122,7 +124,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Vendangeuse</h3>
@@ -136,7 +138,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Stage - Employée polyvalente</h3>
@@ -148,7 +150,7 @@ const Experience = () => {
               ),
             },
             {
-              color: "pink",
+              color: color,
               children: (
                 <>
                   <h3>Stage - Fleuriste</h3>

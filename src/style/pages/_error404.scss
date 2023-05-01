@@ -1,8 +1,11 @@
-// Conteneur principal
-.error404 {
-
+body .error404 {
   border-left: 10px solid $color3;
   border-right: 10px solid $color3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 
   &:before,
   &:after {
@@ -23,14 +26,12 @@
   }
 
   #container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 800px;
-    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    // width: 800px;
+    // height: 410px;
 
     // Contenu flottant à gauche
     img,
@@ -61,7 +62,7 @@
 
       // Paragraphe
       p {
-        color: $color0;
+        color: $color6;
         font-size: 18px;
         line-height: 1.5em;
         letter-spacing: 1px;
@@ -84,15 +85,12 @@
         }
       }
 
-      .link {
-        margin: 70px 0;
-        text-align: end;
-      }
-    }
 
-    #dark {
-      body {
-        background-color: $color6;
+
+      #more {
+        font-size: 30px;
+        text-align: right;
+        margin: 70px 0;
       }
     }
 
@@ -121,6 +119,22 @@
         p {
           font-size: 20px;
           margin: 1.5em 0;
+        }
+      }
+    }
+  }
+}
+
+#dark {
+  .error404 {
+
+    background-color: $color7;
+
+    #container {
+
+      .text {
+        a {
+          color: $color2;
         }
       }
     }

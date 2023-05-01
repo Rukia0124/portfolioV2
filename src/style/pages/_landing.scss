@@ -1,7 +1,11 @@
-// Conteneur principal
-.landing {
+body .landing {
   border-left: 10px solid $color3;
   border-right: 10px solid $color3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 
   &:before,
   &:after {
@@ -22,14 +26,12 @@
   }
 
   #container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 800px;
-    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    // width: 800px;
+    // height: 410px;
 
     // Contenu flottant à gauche
     img,
@@ -60,7 +62,7 @@
 
       // Paragraphe
       p {
-        color: $color5;
+        color: $color6;
         font-size: 18px;
         line-height: 1.5em;
         letter-spacing: 1px;
@@ -124,10 +126,16 @@
 }
 
 #dark {
-  #container {
-    .text {
-      a {
-        color: $color2;
+  .landing {
+
+    background-color: $color7;
+
+    #container {
+
+      .text {
+        a {
+          color: $color2;
+        }
       }
     }
   }

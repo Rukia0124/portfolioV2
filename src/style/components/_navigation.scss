@@ -4,7 +4,7 @@
   align-items: center;
   list-style: none;
   padding: 40px;
-  background-color: $color6;
+  border-bottom: 1px solid $color1;
 
   h3 {
     text-align: left;
@@ -45,6 +45,8 @@
 
 #dark {
   .nav {
+    border-bottom: 1px solid $color2;
+
     h3 {
       color: $color2;
     }

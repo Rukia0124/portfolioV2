@@ -1,6 +1,6 @@
 import React from "react";
 import Socials from "./Socials";
-import Avatar from "../assets/images/rukia_v2_minia.png";
+import Avatar from "../assets/images/Rukia_Avatar.png";
 import { Button } from "antd";
 
 const Introduction = () => {

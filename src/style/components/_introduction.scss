@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 100px 0;
+
 
   .socials {
     margin-right: 2rem;
@@ -16,6 +16,7 @@
     margin: 0 50px;
 
     h1 {
+      padding-top: 330px;
       font-size: 34px;
     }
 
@@ -54,7 +55,7 @@
   }
 
   img {
-    width: 200px;
+    width: 300px;
   }
 
   /* Modifier la disposition pour aligner verticalement les éléments de contenu */

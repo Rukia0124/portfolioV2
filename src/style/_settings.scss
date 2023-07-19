@@ -29,6 +29,7 @@ body,
 #app,
 #app>div {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
   font-size: $font-size-base;
   color: $color0;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 
   #root {
     height: 100%;
@@ -65,6 +67,7 @@ a {
 
 body::-webkit-scrollbar {
   width: 10px;
+  z-index: 2;
   /* largeur de la barre de défilement */
 }
 

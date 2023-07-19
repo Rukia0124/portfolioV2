@@ -1,51 +1,138 @@
-.nav {
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  z-index: 10;
+}
+
+.toggle-btn span {
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  background: $color1;
+  display: block;
+  margin-top: 4px;
+  transition: 0.3s ease;
+}
+
+.nav.open {
+  background-color: $color5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
   padding: 40px;
   border-bottom: 1px solid $color1;
+  z-index: 4;
+  width: 90%;
+  margin: 0 auto;
+}
 
-  h3 {
-    text-align: left;
-    margin-right: auto;
-    margin-left: 20px;
-    font-size: 24px;
-    font-weight: bold;
+.nav.open h3 {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color1;
+}
+
+.nav.open li {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color1;
+  text-decoration: none;
+}
+
+.nav.open li a {
+  color: $color1;
+}
+
+.nav.open li a:hover {
+  color: $color2;
+}
+
+.nav.closed {
+  display: none;
+}
+
+h3 {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color1;
+}
+
+li {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color1;
+  text-decoration: none;
+
+
+  a {
     color: $color1;
-  }
-
-  li {
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $color1;
-    text-decoration: none;
-
-
-    a {
-      color: $color1;
-
-      &:hover {
-        color: $color2;
-      }
-    }
-
-    &:visited {
-      color: $color1;
-    }
 
     &:hover {
       color: $color2;
     }
-
   }
+
+  &:visited {
+    color: $color1;
+  }
+
+  &:hover {
+    color: $color2;
+  }
+
 }
 
+
 #dark {
+  .toggle-btn span {
+    background-color: $color2;
+  }
+
+  .nav.open {
+    background-color: $color7;
+    border-bottom: 1px solid $color2;
+  }
+
+  .nav.open h3 {
+    color: $color1;
+  }
+
+  .nav.open li {
+
+    color: $color2;
+
+  }
+
+  .nav.open li a {
+    color: $color2;
+  }
+
+  .nav.open li a:hover {
+    color: $color1;
+  }
+
   .nav {
     border-bottom: 1px solid $color2;
+    background-color: $color7;
 
     h3 {
       color: $color2;
@@ -72,5 +159,60 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .toggle-btn span {
+    width: 20px;
+    height: 2px;
+  }
+
+
+  .nav {
+    padding: 20px;
+    justify-content: center;
+
+    h3 {
+      display: none;
+    }
+
+    li {
+      margin: 5px;
+
+
+      a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+
+        &:hover {
+          color: $color2;
+        }
+
+        &:visited {
+          color: $color1;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .nav.open {
+    flex-direction: column;
+    align-items: center;
+    /* Prend toute la hauteur de l'écran */
+    width: 90%;
+    /* Prend toute la largeur de l'écran */
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .nav.open li {
+    margin: 10px 0;
   }
 }

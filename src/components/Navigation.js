@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navigation = ({ navItems }) => {
+  const [menu, setMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <div>
-      <ul className="nav" id="nav">
-        <h3>Audrey</h3>
+    <div id="side-bar">
+      <div className="toggle-btn" id="btn" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={`nav ${menu ? "open" : "closed"}`} id="nav">
         {navItems.map((navItem, index) => (
           <li key={index}>
             {navItem.to ? (

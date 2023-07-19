@@ -40,7 +40,7 @@
     "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Grimoire.png?raw=true",
     "description": "Developpement du backend d'un site de notation de livres",
     "tags": ["NodeJs", "Express", "MongoDB"],
-    "link": "mon-vieux-grimoire.rukia.fr",
+    "link": "http://mon-vieux-grimoire.rukia.fr",
     "infos": ""
   }
 ]

@@ -21,7 +21,7 @@ const Projet = () => {
   const navItems = [{ to: "/home", icon: <HomeOutlined /> }];
 
   return (
-    <div>
+    <div className="projects">
       <Navigation navItems={navItems} />
       <div id="projet">
         <h2>{projet.title}</h2>
@@ -43,7 +43,9 @@ const Projet = () => {
               </div>
             ))}
           </div>
-          <div>{projet.infos}</div>
+          <div className="projet-infos">
+            <p>{projet.infos}</p>
+          </div>
           <Button type="primary">
             <a href={projet.link}>Voir le site</a>
           </Button>

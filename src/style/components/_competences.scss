@@ -41,6 +41,49 @@
       }
     }
   }
+
+  @media screen and (max-width: 840px) {
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 40px;
+
+    }
+
+    .ant-collapse-content-box {
+      li {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .competences-content {
+
+      .ant-collapse {
+
+        .ant-collapse-item {
+
+
+          .ant-collapse-header {
+
+            width: 300px;
+            margin: 0 10px;
+          }
+
+          .ant-collapse-content-box {
+            background-color: $color5;
+            color: $color6;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 #dark {

@@ -20,12 +20,12 @@ const CarouselWrapper = styled(Carousel)`
 const Portfolio: React.FC = () => {
   const data = DataService.getAllData();
   return (
-    <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+    <div className="carousel" style={{ maxWidth: "700px", margin: "0 auto" }}>
       <div id="portfolio">
         <h2>Portfolio</h2>
         <p>Mes projets</p>
       </div>
-      <CarouselWrapper autoplay effect="fade" autoplaySpeed={5000}>
+      <CarouselWrapper autoplay effect="fade" autoplaySpeed={4000}>
         {data.map((data, index) => (
           <div className="carousel-slide" key={index}>
             <div className="slide-image">

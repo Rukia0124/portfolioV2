@@ -12,6 +12,7 @@
   padding: 16px;
   border: 2px solid $color1;
 
+
   .slide-image {
     flex: 1;
     height: 100%;
@@ -73,8 +74,26 @@
       }
     }
   }
-
 }
+
+@media screen and (max-width: 840px) {
+  .carousel {
+    width: 90%;
+  }
+
+  #portfolio {
+    h2 {
+      font-size: 24px
+    }
+
+    p {
+      font-size: 14px
+    }
+  }
+}
+
+
+
 
 #dark {
 

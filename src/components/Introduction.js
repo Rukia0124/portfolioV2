@@ -12,8 +12,9 @@ const Introduction = () => {
         <h2>Audrey</h2>
         <h3>Développeuse web junior</h3>
         <p>
-          En formation avec OpenClassrooms, passionnée par l'apprentissage
-          continu et l'amélioration constante de mes compétences.{" "}
+          Actuellement en formation avec OpenClassrooms, passionnée par
+          l'apprentissage continu et l'amélioration constante de mes
+          compétences.{" "}
         </p>
         <Button type="primary" ghost="true">
           <a href="#contact">Contactez-moi</a>

@@ -5,12 +5,25 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  margin-top: auto;
 
   .socials {
     flex-direction: row;
 
     a {
       margin: 5px 10px;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 20px;
     }
   }
 }

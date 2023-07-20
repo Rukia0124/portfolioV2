@@ -114,6 +114,28 @@
       color: $color1;
     }
   }
+
+  @media screen and (max-width: 840px) {
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 40px;
+    }
+
+    .form_container {
+      form {
+        width: 90%;
+      }
+
+      textarea {
+        width: 300px;
+      }
+    }
+  }
 }
 
 #dark {

@@ -40,7 +40,7 @@ const navItems = [
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ height: "100vh", overflowY: "scroll" }}>
       <Navigation navItems={navItems} />
       <Introduction />
       <Next link="#about" />

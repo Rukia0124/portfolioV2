@@ -47,7 +47,9 @@ const Projet = () => {
             <p>{projet.infos}</p>
           </div>
           <Button type="primary">
-            <a href={projet.link}>Voir le site</a>
+            <a href={projet.link} target="_blank" rel="noopener noreferrer">
+              Voir le site
+            </a>
           </Button>
         </div>
       </div>

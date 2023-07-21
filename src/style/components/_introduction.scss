@@ -147,27 +147,27 @@
       }
     }
   }
+}
 
-  #dark {
-    #introduction {
-      .intro-content {
+#dark {
+  #introduction {
+    .intro-content {
 
-        h3 {
-          color: $color6;
-        }
+      h3 {
+        color: $color6;
+      }
 
-        p {
-          color: $color5;
-        }
+      p {
+        color: $color5;
+      }
 
-        button {
-          color: $color2;
-          border-color: $color2;
+      button {
+        color: $color2;
+        border-color: $color2;
 
-          &:hover {
-            color: $color1;
-            border-color: $color1;
-          }
+        &:hover {
+          color: $color1;
+          border-color: $color1;
         }
       }
     }

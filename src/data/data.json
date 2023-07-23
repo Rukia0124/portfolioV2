@@ -4,7 +4,7 @@
     "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Booki.png?raw=true",
     "description": "Création de la page d'accueil d'une agence de voyage",
     "tags": ["HTML", "CSS"],
-    "link": "https://booki.rukia.fr",
+    "link": "http://booki.rukia.fr",
     "infos": "Ce site est le tout premier projet OpenClassrooms. Le but ici est de reproduire une maquette Figma avec HTML et CSS. Il s'agit d'une page statique, étant résponsive en proposant une version tablette et mobile."
   },
   {
@@ -13,7 +13,7 @@
     "imageUrl": "https://github.com/Rukia0124/Portfolio/blob/main/src/assets/images/Projets/Sophie.png?raw=true",
     "description": "Création d'une page web dynamique en Javascript",
     "tags": ["HTML", "CSS", "Javascript"],
-    "link": "https://sophie-bluel.rukia.fr",
+    "link": "http://sophie-bluel.rukia.fr",
     "infos": "Ce projet est le second site que j'ai eu a réaliser avec OpenClassrooms. Il s'agit du site vitrine d'une photographe. Le but était de mettre en place la connexion, la gestion des données via l'api, et le filtrage des photos de la galerie."
   },
   {

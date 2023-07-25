@@ -97,6 +97,7 @@
 
     /* Modifier la disposition pour aligner verticalement les éléments de contenu */
     @media screen and (max-width: 840px) {
+      padding-top: 100px;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;

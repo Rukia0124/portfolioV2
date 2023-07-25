@@ -107,6 +107,14 @@
           .ant-collapse-content-box {
             width: 500px;
             text-align: center;
+
+            li {
+              color: $color2;
+
+              &:hover {
+                color: $color1;
+              }
+            }
           }
 
           .ant-collapse-content-box {

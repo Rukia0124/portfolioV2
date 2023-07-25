@@ -4,7 +4,7 @@ import React from "react";
 const GoTop = () => {
   return (
     <div className="gotop">
-      <a href="#nav" id="gotop">
+      <a href="#introduction" id="gotop">
         <ArrowUpOutlined />
       </a>
     </div>

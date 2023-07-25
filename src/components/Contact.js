@@ -46,12 +46,24 @@ export const Contact = () => {
       </div>
       <div className="form_container">
         <form ref={form} onSubmit={sendEmail}>
-          <label>Nom</label>
-          <input type="text" name="name" required autoComplete="off" />
-          <label>Email</label>
-          <input type="email" name="email" required autoComplete="off" />
-          <label>Message</label>
-          <textarea name="message" required />
+          <label for="name">Nom</label>
+          <input
+            type="text"
+            name="name"
+            required
+            autoComplete="off"
+            id="name"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autoComplete="off"
+          />
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required />
           <input type="submit" value="Envoyer" />
         </form>
         <div className="form-message"></div>

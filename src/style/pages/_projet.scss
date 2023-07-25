@@ -63,11 +63,11 @@
     }
 
     .ant-btn {
-      margin: 30px;
       background-color: $color5;
       color: $color1;
       border: 1px solid $color1;
       box-shadow: none;
+      margin: 15px !important;
 
       &:hover {
         color: $color2;

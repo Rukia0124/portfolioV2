@@ -46,11 +46,18 @@ const Projet = () => {
           <div className="projet-infos">
             <p>{projet.infos}</p>
           </div>
-          <Button type="primary">
-            <a href={projet.link} target="_blank" rel="noopener noreferrer">
-              Voir le site
-            </a>
-          </Button>
+          <div>
+            <Button type="primary">
+              <a href={projet.link} target="_blank" rel="noopener noreferrer">
+                Voir le site
+              </a>
+            </Button>
+            <Button type="primary">
+              <a href={projet.github} target="_blank" rel="noopener noreferrer">
+                Voir sur Github
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
       <Footer />

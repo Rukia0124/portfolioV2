@@ -5,7 +5,8 @@
     "description": "Création de la page d'accueil d'une agence de voyage",
     "tags": ["HTML", "CSS"],
     "link": "http://booki.rukia.fr",
-    "infos": "Ce site est le tout premier projet OpenClassrooms. Le but ici est de reproduire une maquette Figma avec HTML et CSS. Il s'agit d'une page statique, étant résponsive en proposant une version tablette et mobile."
+    "infos": "Ce site est le tout premier projet OpenClassrooms. Le but ici est de reproduire une maquette Figma avec HTML et CSS. Il s'agit d'une page statique, étant résponsive en proposant une version tablette et mobile.",
+    "github": "https://github.com/Rukia0124/Booki"
   },
   {
     "id": "pwyAhS6yX9RNFQ2f",
@@ -14,7 +15,8 @@
     "description": "Création d'une page web dynamique en Javascript",
     "tags": ["HTML", "CSS", "Javascript"],
     "link": "http://sophie-bluel.rukia.fr",
-    "infos": "Ce projet est le second site que j'ai eu a réaliser avec OpenClassrooms. Il s'agit du site vitrine d'une photographe. Le but était de mettre en place la connexion, la gestion des données via l'api, et le filtrage des photos de la galerie."
+    "infos": "Ce projet est le second site que j'ai eu a réaliser avec OpenClassrooms. Il s'agit du site vitrine d'une photographe. Le but était de mettre en place la connexion, la gestion des données via l'api, et le filtrage des photos de la galerie.",
+    "github": "https://github.com/Rukia0124/Portfolio-architecte-sophie-bluel-master"
   },
   {
     "id": "gFyfXDW6b5Mp6L5j",
@@ -23,7 +25,8 @@
     "description": "Deguggage et optimisation d'un site de photographe",
     "tags": ["Javascript", "SEO", "Accessibilité"],
     "link": "https://ninacarducci.netlify.app/",
-    "infos": "J'ai corrigé et optimissé le code de ce site, afin d'obtenir de meilleurs performances. J'ai également mis en place le SEO et me suis assurée que l'accessibilité sois optimale."
+    "infos": "J'ai corrigé et optimissé le code de ce site, afin d'obtenir de meilleurs performances. J'ai également mis en place le SEO et me suis assurée que l'accessibilité sois optimale.",
+    "github": "https://github.com/Rukia0124/Nina-Carducci"
   },
   {
     "id": "w27Dk6h7E8mGtJF9",
@@ -32,7 +35,8 @@
     "description": "Création d'une application de location immobilière en React",
     "tags": ["React"],
     "link": "http://kasa.rukia.fr./",
-    "infos": ""
+    "infos": "",
+    "github": "https://github.com/Rukia0124/Kasa"
   },
   {
     "id": "projet5",
@@ -41,6 +45,7 @@
     "description": "Developpement du backend d'un site de notation de livres",
     "tags": ["NodeJs", "Express", "MongoDB"],
     "link": "http://mon-vieux-grimoire.rukia.fr",
-    "infos": ""
+    "infos": "",
+    "github": "https://github.com/Rukia0124/Mon-vieux-grimoire"
   }
 ]

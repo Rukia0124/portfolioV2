@@ -1,127 +1,140 @@
 #competences {
+  background-color: $back3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 100px 0;
+  justify-content: center;
 
   h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 60px;
   }
 
-  p {
-    font-size: 15px;
-    margin-bottom: 40px;
-  }
-
-  .competences-content {
+  .cards-container {
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    flex-direction: column;
 
-    .ant-collapse {
-      border: 1px solid $color1;
-      margin-right: 20px;
+    .card1,
+    .card2,
+    .card3 {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: row;
+      width: 1000px;
+    }
 
-      .ant-collapse-item {
-        border: none;
 
-        .ant-collapse-header {
-          border-color: $color1;
-          color: $color1;
-          width: 500px;
-        }
+    .card {
+      width: 900px;
+      background-color: $color5;
+      border: solid 1px $color6;
+      border-radius: 20px;
+      margin: 20px;
+      -webkit-box-shadow: 4px 4px 2px -2px rgba(145, 145, 145, 0.62);
+      box-shadow: 4px 4px 2px -2px rgba(139, 139, 139, 0.62);
+      width: 80%;
+      padding: 20px;
 
-        .ant-collapse-content-box {
-          background-color: $color5;
-          color: $color6;
-          text-align: center;
-        }
+      h3 {
+        color: $color1;
       }
-    }
-  }
 
-  @media screen and (max-width: 840px) {
-    h2 {
-      margin-top: 0;
-      font-size: 24px;
-    }
+      p {
+        color: $color6;
+        padding: 20px;
+      }
 
-    p {
-      font-size: 14px;
-      margin-bottom: 40px;
-
-    }
-
-    .ant-collapse-content-box {
       li {
-        font-size: 12px;
+        color: $color6;
+        padding-top: 10px;
+      }
+    }
+
+
+    .img-container {
+
+      img {
+        width: 300px;
       }
     }
   }
 
-  @media screen and (max-width: 600px) {
-    .competences-content {
+  @media screen and (max-width: 1100px) {
+    .img-container {
+      display: none;
+    }
 
-      .ant-collapse {
+    .cards-container {
+      margin: 0 auto;
 
-        .ant-collapse-item {
-
-
-          .ant-collapse-header {
-
-            width: 300px;
-            margin: 0 10px;
-          }
-
-          .ant-collapse-content-box {
-            background-color: $color5;
-            color: $color6;
-            text-align: center;
-          }
-        }
+      .card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
       }
+
+      .card1,
+      .card2,
+      .card3 {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+
+    .cards-container {
+      width: 500px;
+
+      .card {
+        width: 100%;
+      }
+
+      .card1,
+      .card2,
+      .card3 {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .cards-container {
+      width: 100%;
+
+      .card {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
     }
   }
 }
 
 #dark {
   #competences {
+    background-color: $color0;
 
+    .card {
+      background-color: $color6;
+      -webkit-box-shadow: 4px 4px 2px -2px rgba(196, 196, 196, 0.62);
+      box-shadow: 4px 4px 2px -2px rgba(227, 227, 227, 0.62);
 
-    .competences-content {
+      h3 {
+        color: $color2;
+      }
 
-      .ant-collapse {
-        border: 1px solid $color2;
+      p {
+        color: $color0;
+      }
 
-
-        .ant-collapse-item {
-
-          .ant-collapse-header {
-            border-color: $color2;
-            color: $color2;
-
-          }
-
-          .ant-collapse-content-box {
-            width: 500px;
-            text-align: center;
-
-            li {
-              color: $color2;
-
-              &:hover {
-                color: $color1;
-              }
-            }
-          }
-
-          .ant-collapse-content-box {
-            background-color: $color0;
-            color: $color5;
-          }
-        }
+      li {
+        color: $color5;
       }
     }
   }

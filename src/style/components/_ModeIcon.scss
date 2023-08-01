@@ -5,10 +5,15 @@
     position: fixed;
     left: 20px;
     bottom: 20px;
-    color: $color1 !important;
+    color: $color5 !important;
+    padding: 15px;
+    border: 1px solid $color1;
+    background-color: $color1;
+    border-radius: 25px;
+    z-index: 1000;
 
     &:visited {
-      color: $color1 !important;
+      color: $color5 !important;
     }
   }
 }
@@ -20,10 +25,15 @@
     position: fixed;
     left: 20px;
     bottom: 20px;
-    color: $color2 !important;
+    color: $color0 !important;
+    padding: 15px;
+    border: 1px solid $color2;
+    background-color: $color2;
+    border-radius: 25px;
+    z-index: 1000;
 
     &:visited {
-      color: $color2 !important;
+      color: $color0 !important;
     }
   }
 }

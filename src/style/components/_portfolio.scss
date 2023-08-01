@@ -1,7 +1,27 @@
+.portfolio {
+  background-color: $back2;
+  background: radial-gradient(circle, rgba(227, 221, 230, 1) 2%, $back2 42%);
+  padding-top: 50px;
+  padding-bottom: 180px;
+  position: relative;
+  width: 100%;
+
+  .separation {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+
+  }
+}
+
 #portfolio p {
   font-size: 15px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.slick-slider {
+  margin-bottom: 50px;
 }
 
 .carousel-slide {
@@ -11,6 +31,7 @@
   height: 100%;
   padding: 16px;
   border: 2px solid $color1;
+  background-color: $color5;
 
 
   .slide-image {
@@ -21,7 +42,7 @@
     img {
       height: 100%;
       width: 100%;
-      object-fit: cover;
+
     }
   }
 
@@ -33,6 +54,7 @@
     h3 {
       font-size: 24px;
       margin-bottom: 8px;
+      text-align: center;
     }
 
     p {
@@ -41,8 +63,8 @@
     }
 
     .learn-more-button {
-      background-color: $color5;
-      color: $color1;
+      background-color: $color1;
+      color: $color4;
       border: 1px solid $color1;
       padding: 8px 16px;
       border-radius: 4px;
@@ -65,7 +87,7 @@
       }
 
       a {
-        color: $color1;
+        color: $color4;
 
         &:hover {
           color: $color2;
@@ -77,6 +99,11 @@
 }
 
 @media screen and (max-width: 840px) {
+  .portfolio {
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+
   .carousel {
     width: 90%;
   }
@@ -96,9 +123,16 @@
 
 
 #dark {
+  .portfolio {
+
+    background: rgb(77, 77, 77);
+    background: radial-gradient(circle, rgba(77, 77, 77, 1) 0%, rgba(103, 136, 115, 1) 27%);
+
+  }
 
   .carousel-slide {
     border: 2px solid $color2;
+    background-color: $color0;
 
     .slide-content {
       flex: 1;
@@ -115,7 +149,7 @@
       }
 
       .learn-more-button {
-        background-color: $color7;
+        background-color: $color2;
         color: $color2;
         border: 1px solid $color2;
 
@@ -134,7 +168,7 @@
         }
 
         a {
-          color: $color2;
+          color: $color0;
 
           &:hover {
             color: $color1;

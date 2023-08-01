@@ -4,6 +4,7 @@ body .error404 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $back1;
 
 
 
@@ -41,8 +42,7 @@ body .error404 {
 
     // Image
     img {
-      width: 250px;
-      height: 400px;
+      width: 400px;
       transform: scale(1.2);
     }
 
@@ -58,6 +58,7 @@ body .error404 {
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-bottom: 15px;
+        color: $color1;
       }
 
       // Paragraphe
@@ -133,6 +134,10 @@ body .error404 {
     #container {
 
       .text {
+        h1 {
+          color: $color2;
+        }
+
         a {
           color: $color2;
         }

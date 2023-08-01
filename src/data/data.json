@@ -5,7 +5,7 @@
     "description": "Création de la page d'accueil d'une agence de voyage",
     "tags": ["HTML", "CSS"],
     "link": "http://booki.rukia.fr",
-    "infos": "Ce site est le tout premier projet OpenClassrooms. Le but ici est de reproduire une maquette Figma avec HTML et CSS. Il s'agit d'une page statique, étant résponsive en proposant une version tablette et mobile.",
+    "infos": "Ce site est le tout premier projet OpenClassrooms. Le but ici est de reproduire une maquette Figma avec HTML et CSS. Il s'agit d'une page statique, étant résponsive en proposant une version tablette et mobile. LE code CSS et le code HTML sont validés W3C",
     "github": "https://github.com/Rukia0124/Booki"
   },
   {
@@ -15,7 +15,7 @@
     "description": "Création d'une page web dynamique en Javascript",
     "tags": ["HTML", "CSS", "Javascript"],
     "link": "http://sophie-bluel.rukia.fr",
-    "infos": "Ce projet est le second site que j'ai eu a réaliser avec OpenClassrooms. Il s'agit du site vitrine d'une photographe. Le but était de mettre en place la connexion, la gestion des données via l'api, et le filtrage des photos de la galerie.",
+    "infos": "Ce projet est le second site que j'ai eu a réaliser avec OpenClassrooms. Il s'agit du site vitrine d'une photographe. Le but était de mettre en place la connexion, la gestion des données via l'api, et le filtrage des photos de la galerie. Le backend et le code HTML étaient fournis, le but était de gérer principalement les appels à la base de données.",
     "github": "https://github.com/Rukia0124/Portfolio-architecte-sophie-bluel-master"
   },
   {
@@ -35,7 +35,7 @@
     "description": "Création d'une application de location immobilière en React",
     "tags": ["React"],
     "link": "http://kasa.rukia.fr./",
-    "infos": "",
+    "infos": "Pour ce projet, j'ai eu à mettre en place le frontend d'une application de location immobilière. Il s'agit d'une application React composée de différentes pages et composants, et devant faire appel à une api pour récupérer les informations sur les logements dans la base de données.",
     "github": "https://github.com/Rukia0124/Kasa"
   },
   {
@@ -45,7 +45,7 @@
     "description": "Developpement du backend d'un site de notation de livres",
     "tags": ["NodeJs", "Express", "MongoDB"],
     "link": "http://mon-vieux-grimoire.rukia.fr",
-    "infos": "",
+    "infos": "Mon vieux Grimoire est le dernier projet de ma formation OpenClassrooms. Le frontend étant fourni, le but, ici, est de mettre en place le backend d'un site de notation de livres, en NodeJS. Pour se faire, j'ai suivi les spécifications techniques et les spécifications fonctionelles de l'api, pour mettre en place un serveur Express et une API RESTful avec MongoDB. Le site dispose d'un système d'authentification, d'ajout/modification/suppression de livres, ainsi que la notation de ces derniers.",
     "github": "https://github.com/Rukia0124/Mon-vieux-grimoire"
   }
 ]

@@ -1,21 +1,37 @@
 #gotop {
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 20px;
-  color: $color1 !important;
+  color: $color5 !important;
+  padding: 15px;
+  border: 1px solid $color1;
+  background-color: $color1;
+  border-radius: 25px;
+  height: 48px;
+  width: 48px;
 
   &:visited {
-    color: $color1 !important;
+    color: $color5 !important;
   }
 }
 
 #dark {
   #gotop {
-
-    color: $color2 !important;
+    background-color: $color2;
+    color: $color0 !important;
+    border-color: $color2;
 
     &:visited {
-      color: $color2 !important;
+      color: $color0 !important;
     }
   }
+}
+
+@media only screen and (max-width: 855px) {
+  #gotop {
+    right: 20px;
+
+  }
+
+
 }

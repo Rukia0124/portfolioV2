@@ -1,5 +1,5 @@
 #footer {
-  background-color: $color6;
+  background-color: $back1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,5 +25,14 @@
       font-size: 12px;
       margin-bottom: 20px;
     }
+  }
+
+}
+
+#dark {
+  #footer {
+    background-color: $color0;
+
+
   }
 }

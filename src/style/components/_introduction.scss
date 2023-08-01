@@ -1,12 +1,20 @@
 #introduction {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 150px;
   width: 100%;
+  background-color: $back1;
+  background: radial-gradient(circle, rgba(227, 221, 230, 1) 2%, rgba(239, 206, 217, 1) 33%);
+  position: relative;
 
+  .separation {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
 
   .socials {
     margin-right: 2rem;
@@ -15,7 +23,7 @@
   .intro-content {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 30%;
     margin: 0 50px;
 
     h1 {
@@ -27,7 +35,6 @@
       margin-top: 0;
       font-size: 30px;
       text-align: left;
-
     }
 
     h3 {
@@ -38,7 +45,7 @@
     }
 
     p {
-      font-size: 15px;
+      font-size: 18px;
       margin-bottom: 40px;
 
     }
@@ -51,8 +58,11 @@
       width: 170px;
       padding: 20px;
       text-align: center;
-      color: $color1;
+      color: $color5;
       border-color: $color1;
+      background-color: $color1;
+      margin-bottom: 15px;
+      margin: 0 auto;
 
       &:hover {
         color: $color2;
@@ -62,7 +72,7 @@
   }
 
   img {
-    width: 300px;
+    width: 600px;
   }
 
   @media screen and (max-width: 1110px) {
@@ -88,14 +98,17 @@
       }
 
       p {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 40px;
 
       }
     }
 
+    img {
+      width: 400px;
+    }
 
-    /* Modifier la disposition pour aligner verticalement les éléments de contenu */
+
     @media screen and (max-width: 840px) {
       padding-top: 100px;
       flex-direction: column-reverse;
@@ -130,13 +143,8 @@
           font-size: 20px;
         }
 
-        h3 {
-          margin-bottom: 20px;
-          font-size: 14px;
-        }
-
         p {
-          font-size: 12px;
+          font-size: 14px;
           margin-bottom: 40px;
 
         }
@@ -152,6 +160,10 @@
 
 #dark {
   #introduction {
+    background-color: $color0;
+    background: rgb(128, 126, 126);
+    background: radial-gradient(circle, rgba(128, 126, 126, 1) 0%, rgba(77, 77, 77, 1) 48%);
+
     .intro-content {
 
       h3 {
@@ -163,8 +175,9 @@
       }
 
       button {
-        color: $color2;
+        color: $color0;
         border-color: $color2;
+        background-color: $color2;
 
         &:hover {
           color: $color1;

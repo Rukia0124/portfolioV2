@@ -1,14 +1,14 @@
 #contact {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   padding-bottom: 50px;
-  margin: 40px;
+  background-color: $back1;
+  background: radial-gradient(circle, rgba(227, 221, 230, 1) 2%, rgba(239, 206, 217, 1) 33%);
 
-  p {
-    font-size: 15px;
-    margin-bottom: 20px;
-    text-align: center;
+  .mail-img {
+    width: 40%;
   }
 
   .form_container {
@@ -25,6 +25,7 @@
       color: $color1;
       margin-top: 10px;
       margin: 0 auto;
+      font-size: 18px;
     }
 
     input,
@@ -80,15 +81,17 @@
     }
 
     input[type="submit"] {
-      background-color: $color5;
-      color: $color1;
+      background-color: $color1;
+      color: $color5;
       border: 1px solid $color1;
-      padding: 6px 16px;
-      border-radius: 4px;
+      padding: 16px 50px;
+      border-radius: 10px;
       cursor: pointer;
       display: block;
       margin: 0 auto;
-      height: 30px;
+      margin-top: 40px;
+      height: 50px;
+      font-size: 18px;
 
       &:hover {
         color: $color2;
@@ -115,9 +118,15 @@
     }
   }
 
+  @media screen and (max-width: 1040px) {
+    .mail-img {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 840px) {
     h2 {
-      margin-top: 0;
+      margin-top: 80px;
       font-size: 20px;
     }
 
@@ -140,6 +149,10 @@
 
 #dark {
   #contact {
+    background-color: $color0;
+    background: rgb(128, 126, 126);
+    background: radial-gradient(circle, rgba(128, 126, 126, 1) 0%, rgba(77, 77, 77, 1) 30%);
+
     .form_container {
       label {
         color: $color2;

@@ -2,9 +2,12 @@ import { CalendarOutlined } from "@ant-design/icons";
 import { Timeline } from "antd";
 import { ThemeContext } from "../App";
 import React, { useContext, useState } from "react";
+import WaveLight from "../assets/images/wave1.png";
+import WaveDark from "../assets/images/wave3.png";
 
 const Experience = () => {
   const { theme } = useContext(ThemeContext);
+  const WaveImg = theme === "light" ? WaveLight : WaveDark;
   const [career, setCareer] = useState(false);
   const [studies, setStudies] = useState(true);
 
@@ -21,7 +24,6 @@ const Experience = () => {
   return (
     <div id="experience">
       <h2>Expériences</h2>
-      <p>Mon parcours</p>
       <div className="btn-xp">
         <div
           className={`btn btn-studies ${studies ? "active-btn" : ""}`}
@@ -164,6 +166,11 @@ const Experience = () => {
           ]}
         />
       )}
+      <img
+        src={WaveImg}
+        alt="Seconde vague de séparation"
+        className="separation"
+      />
     </div>
   );
 };

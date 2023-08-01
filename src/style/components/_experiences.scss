@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $back3;
 
   h2 {
     font-size: 34px;
@@ -60,6 +61,8 @@
 
 #dark {
   #experience {
+    background-color: $color0;
+
     h3 {
       color: $color2;
     }

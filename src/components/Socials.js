@@ -1,8 +1,4 @@
-import {
-  GithubOutlined,
-  LinkedinOutlined,
-  TwitterOutlined,
-} from "@ant-design/icons";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import React from "react";
 
 const Socials = () => {

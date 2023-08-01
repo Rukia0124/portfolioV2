@@ -2,7 +2,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Error404 from "./pages/Error404";
-import Landing from "./pages/Landing";
 import Projet from "./pages/Projet";
 import React, { createContext, useEffect, useState } from "react";
 import { BulbOutlined } from "@ant-design/icons";
@@ -31,7 +30,7 @@ function App() {
         </div>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/projets/:id" element={<Projet />} />
             <Route path="*" element={<Error404 />} />

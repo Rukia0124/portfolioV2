@@ -1,6 +1,7 @@
 .projects {
   height: 100%;
   min-height: 100vh;
+  background-color: $back1;
 }
 
 #projet {
@@ -142,6 +143,10 @@
 }
 
 #dark {
+  .projects {
+    background-color: $color0;
+  }
+
   #projet {
 
     .projet-desc {

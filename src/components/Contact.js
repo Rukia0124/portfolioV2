@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import MailImg from "../assets/images/contact.png";
 
 export const Contact = () => {
   const form = useRef();
@@ -40,11 +41,11 @@ export const Contact = () => {
 
   return (
     <div id="contact">
-      <div>
-        <h2>Contactez-moi</h2>
-        <p>Get in touch</p>
-      </div>
+      <img src={MailImg} alt="Dessin d'ordinateur" className="mail-img" />
       <div className="form_container">
+        <div>
+          <h2>Contactez-moi</h2>
+        </div>
         <form ref={form} onSubmit={sendEmail}>
           <label for="name">Nom</label>
           <input

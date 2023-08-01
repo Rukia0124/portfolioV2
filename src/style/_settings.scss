@@ -1,12 +1,15 @@
 // Variables
 $color0: #4d4d4d;
-$color1: #efb9e3;
+$color1: #F3A6AD;
 $color2:#aeecc4;
 $color3: #f5dcfd;
 $color4: #e2fbeb;
 $color5:#fffdfd;
 $color6: #767676;
 $color7:#2c2d2c;
+$back1:#EFCED9;
+$back2:#D8B2E1;
+$back3: #EEEEF0;
 $font-family: freight-sans-pro,
 sans-serif;
 $font-size-base: 16px;
@@ -16,6 +19,7 @@ $font-size-base: 16px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 html {
@@ -31,6 +35,7 @@ body,
   height: 100vh;
   overflow-x: hidden;
 }
+
 
 body {
   font-family: $font-family;
@@ -66,36 +71,14 @@ a {
   text-decoration: none;
 }
 
-body::-webkit-scrollbar {
-  width: 10px;
-  z-index: 20;
-  /* largeur de la barre de défilement */
-}
-
-body::-webkit-scrollbar-track {
-  background: $color2;
-  /* couleur de fond de la barre de défilement */
-}
-
-body::-webkit-scrollbar-thumb {
-  background: $color1;
-  /* couleur de la barre de défilement */
-  border-radius: 5px;
-  /* rayon des coins de la barre de défilement */
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: $color6;
-  /* couleur de la barre de défilement au survol */
-}
-
 
 #light {
   background-color: $color5;
 
   h1,
-  h2 {
-    color: $color1;
+  h2,
+  h3 {
+    color: $color6;
   }
 }
 

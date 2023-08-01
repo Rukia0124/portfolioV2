@@ -1,5 +1,5 @@
 import React from "react";
-import Terminal from "../assets/images/Terminal.png";
+import Terminal from "../assets/images/terminal.png";
 import { Button } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 

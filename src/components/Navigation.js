@@ -10,7 +10,11 @@ const Navigation = ({ navItems }) => {
 
   return (
     <div id="side-bar">
-      <div className="toggle-btn" id="btn" onClick={toggleMenu}>
+      <div
+        className={`toggle-btn ${menu ? "active" : ""}`}
+        id="btn"
+        onClick={toggleMenu}
+      >
         <span></span>
         <span></span>
         <span></span>

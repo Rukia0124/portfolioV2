@@ -1,3 +1,33 @@
+@keyframes menuOpenAnimation {
+  from {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+
+  to {
+    width: 500px;
+    height: 500px;
+    padding-top: 100px;
+    padding-right: 100px;
+  }
+}
+
+@keyframes menuCloseAnimation {
+  from {
+    width: 500px;
+    height: 500px;
+    padding-top: 100px;
+    padding-right: 100px;
+  }
+
+  to {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+}
+
 .toggle-btn {
   position: absolute;
   top: 20px;
@@ -45,6 +75,7 @@
   width: 500px;
   height: 500px;
   text-align: center;
+  animation: menuOpenAnimation 0.5s ease forwards;
 }
 
 
@@ -58,6 +89,7 @@
 
 .nav.closed {
   display: none;
+  animation: menuCloseAnimation 0.5s ease forwards;
 }
 
 h3 {
@@ -95,6 +127,17 @@ li {
 
 }
 
+.toggle-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 0px);
+}
+
+.toggle-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, 0px);
+}
 
 #dark {
   .toggle-btn {
@@ -127,6 +170,26 @@ li {
     color: $color1;
   }
 
+}
+
+.active span {
+  position: absolute;
+}
+
+.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.active~.content {
+  opacity: 0.3;
 }
 
 @media only screen and (max-width: 855px) {

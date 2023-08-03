@@ -47,7 +47,7 @@ export const Contact = () => {
           <h2>Contactez-moi</h2>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <label for="name">Nom</label>
+          <label htmlFor="name">Nom</label>
           <input
             type="text"
             name="name"
@@ -55,7 +55,7 @@ export const Contact = () => {
             autoComplete="off"
             id="name"
           />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
@@ -63,7 +63,7 @@ export const Contact = () => {
             required
             autoComplete="off"
           />
-          <label for="message">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea name="message" id="message" required />
           <input type="submit" value="Envoyer" />
         </form>

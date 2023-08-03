@@ -1,7 +1,7 @@
 import React from "react";
-import Back from "../assets/images/back.png";
-import Front from "../assets/images/front.png";
-import Other from "../assets/images/other.webp";
+import Back from "../assets/images/backend.png";
+import Front from "../assets/images/frontend.png";
+import Other from "../assets/images/other.png";
 const Competences = () => {
   return (
     <div id="competences">

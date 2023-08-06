@@ -2,7 +2,8 @@ import React from "react";
 import Socials from "./Socials";
 import WaveLight from "../assets/images/wave1.png";
 import WaveDark from "../assets/images/wave3.png";
-import Avatar from "../assets/images/Rukia_Avatar.png";
+import AvatarLight from "../assets/images/AvatarLight.png";
+import AvatarDark from "../assets/images/AvatarDark.png";
 import { Button } from "antd";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
@@ -10,6 +11,7 @@ import { ThemeContext } from "../App";
 const Introduction = () => {
   const { theme } = useContext(ThemeContext);
   const WaveImg = theme === "light" ? WaveLight : WaveDark;
+  const Avatar = theme === "light" ? AvatarLight : AvatarDark;
   return (
     <div id="introduction">
       <Socials />

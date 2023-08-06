@@ -1,8 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Avatar from "../assets/images/Rukia_Avatar.png";
-
+import AvatarLight from "../assets/images/AvatarLight.png";
+import AvatarDark from "../assets/images/AvatarDark.png";
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 const Error404 = () => {
+  const { theme } = useContext(ThemeContext);
+  const Avatar = theme === "light" ? AvatarLight : AvatarDark;
   return (
     <div className="error404">
       <div id="container">
